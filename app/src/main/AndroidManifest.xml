@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bams.pk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="q">
+        <activity android:name=".activity.DetailLocationActivity" />
+        <activity android:name=".activity.DrugStoreActivity" />
+        <activity android:name=".activity.DoctorActivity" />
+        <activity android:name=".activity.HospitalActivity" />
+        <activity android:name=".activity.ClinicActivity" />
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.Tentang"/>
+        <activity android:name=".activity.Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCgtlTsEK2YlPf6He9-eZg1o0DXUsfIOgc" />
+
+    </application>
+
+</manifest>

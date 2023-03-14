@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Tentang">
+
+    <ImageView
+        android:id="@+id/imgFaq"
+        android:layout_width="450dp"
+        android:layout_height="280dp"
+        android:src="@drawable/gundar"/>
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/FaqDt"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/imgFaq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Aplikasi Pencarian Lokasi Layanan Kesehatan adalah aplikasi yang bertujuan untuk memberikan informasi kepada masyarakat mengenai lokasi layanan kesehatan terdekat    "/>
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FaqDt"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:text="Bambang Satrio Nugroho"/>
+
+    <TextView
+        android:id="@+id/jurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:text="Teknik Informatika Universitas Gunadarma"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jurusan"
+        android:gravity="center"
+        android:textAlignment="gravity"
+        android:text="bambang.satrio51@gmail.com"/>
+
+</RelativeLayout>
